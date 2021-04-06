@@ -1,0 +1,37 @@
+Selectores comunes:
+-elemento, clase(.) y id (#).
+
+Selectores Hijos descendientes:
+-Generales [ ] (descendiente): Se usa un espacio para separar al padre de los hijos.
+-Particular [ > ](directos): Se usa en > para separar al padre del hijo.
+
+Selectores Hermanos:
+-General: Se usa la tilde [~] para indicar el hermano con el que queremos compara la relacion de hermanos.
+h1 ~ p => Esto afectara a todos los "p" que sean hermanos de "h1" en cualquier nivel. tilde es Alt + 126 
+-Adyacentes: Se usa el signo plus [+] para indicar el hermano con el que queremos comparar.
+h2 + p =>Esto afectara solo al hermano "p" directamente adyacente mas cercano a "h2".
+
+Selectores Atributo (el atributo debe ir entre corchetes [] ):
+-Presente: Que el atributo este presente es suficiente para afectar a todos los elementos indicado con ese atributo.
+img[alt] => afecta a todos los "img" que tengan el atributo "alt".
+-Igual: Que el atributo sea estrictamente igual como se indica.
+img[alt="compu"] => solo afectara a las "img" cuyo valor del atributo "alt" sea estrictamente igual a "compu".
+-Contenido: Que el atributo tenga en su valor en algun lugar el valor indicado.
+img[alt="impre"] =>  afectara a todos los "img" que tengan en algun lugar del valor del atributo "alt" lo indicado "impre".
+
+El orden correcto para escribir los selectores avanzados es: Elemento, pseudoelemento, psuedoclase.
+
+Pseudoelementos:
+
+
+
+
+
+
+
+
+
+
+
+
+
