@@ -1,0 +1,199 @@
+body {
+    background-image: url();
+}
+
+#bloque-prueba {
+    background-color: blue;
+    height: 80px;
+    flex-wrap: wrap;
+}
+.span-prueba {
+    background-color: red;
+    height: 80px;
+}
+/* Encabezado */
+header {
+    height: 100px;
+}
+figure {
+    width: 30%;
+    float: left;
+}
+figure img {
+    height: 80px;
+}
+nav {
+    float: right;
+    width: 40%;
+}
+#ul-header {
+    margin-top: 2.5em;
+}
+
+.li-header:link {
+    color: yellow;
+}
+.li-header:hover {
+    /* color: red; */
+    text-decoration: overline wavy red;
+}
+.li-header:visited {
+    color: green;
+}
+#ul-header .li-header {
+    float: left;
+    margin-right: 1.5em;
+    list-style: none;
+}
+/* Segundo Encabezado */
+#encabezado {
+    background-color: #202020;
+    height: 50px;
+    padding-top: 5px;
+}
+#titulo-principal {
+    background-color: #EC1D24;
+    color: white;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5px;
+    -webkit-box-shadow: 0 7px 17px -8px rgb(236 29 36 / 80%);
+    box-shadow: 0 7px 17px -8px rgb(236 29 36 / 80%);
+}
+
+/* Contenedor Principal */
+#contenedor {
+    height: 3000px;
+}
+/* Aside */
+aside {
+    width: 15%;
+    height: 1100px;
+    float: right;
+    /* background: linear-gradient(to bottom, red, blue ); */
+    /* background-image: url(../img/aside_img.jpg); */
+}
+/* Seccion de Peliculas */
+section {
+    width: 85%;
+    float: left;
+    /* height: 450px; */
+}
+article {
+    width: 45%;
+    height: 200px;
+    float: left;
+    margin: 1em;
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-style: italic;
+  text-align: center
+}
+p {
+    font-style: italic;
+    font-weight: 900;
+    text-indent: 40px;
+    text-align: justify;
+    margin: 0 20px;
+    text-transform: none;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+}
+.art-pelicula {
+    background-color: #4748BD;
+}
+/*Seccion de Series*/
+.art-serie {
+    background-color: #d1161cb7;
+}
+/*Seccion de Redactores*/
+.art-redactores {
+    background-color: rgb(207, 101, 101);
+    height: 500px;
+}
+.li-redactores {
+    /* list-style: georgian; */
+    list-style-image: url(../img/Captain_America_icon-icons.com_54198.png)
+}
+
+/* Footer  */
+footer {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    height: 100px;
+    padding: 2em;
+}
+
+
+h2 {
+    background: linear-gradient(to right, #EC1D24, #4748BD );
+    text-align: center;
+    font-weight: bold;
+    color: white
+}
+h2:hover {
+    transition: all .17s ease-in-out;
+    transform: translateZ(0);
+}
+h6{
+    color: blue;
+}
+/* blockquote {
+    color: indigo
+} */
+
+/*estilos de tablas*/
+#t-crono {
+    width: 80%;
+}
+tr {
+    height: 50px;
+}
+table tr td {
+    border: 1px solid blue;
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    /* padding: 10px; */
+    vertical-align: middle;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding: 0 10px;
+}
+.title {
+    background-color: #EC1D24;
+    text-align: center;
+    font-weight: bold;
+}
+.peli {
+    background-color: yellow;
+    text-align: center;
+}
+
+/*Estilos del formulario*/
+form {
+    width: 500px;
+    margin: 0 30%;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+}
+.btn-form {
+    background-color: rgba(223, 11, 11, 0.794);
+    width: 150px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+

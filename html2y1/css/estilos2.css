@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+    height: 2000px;
+    overflow-x: hidden;
+}
+/*ENCABEZADO*/
+header {
+    height: 150px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 5px solid rgb(27, 27, 102);
+    position: fixed;
+    z-index: 100;
+}
+figure {
+    float: left;
+    margin-top: 1.5em;
+    margin-left: 2em;
+}
+#logo-tienda {
+    height: 100px;
+    width: 100px;
+}
+nav {
+    float: right;
+    width: 45%;
+    margin-top: 2.5em;
+}
+ul {
+    list-style: none;
+}
+.li-header {
+   display: inline-block; 
+}
+.li-header {
+    /*float: left;*/
+}
+#lista-header li {
+    width: 80px;
+    height: 15px;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: rgba(100, 149, 237, 1);
+    margin-right: 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+#lista-header li:hover {
+    background-color: rgba(156, 180, 226, 0.5);
+    color: rgba(11, 11, 65, 0.7);
+}
+
+/*CONTENEDOR*/
+.container {
+    position: absolute;
+    top: 155px;
+}
+
+/*TITULO SECCION*/
+#titulo-seccion {
+    text-align: center;
+    color: rgb(4, 4, 92);
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/*BOTON LLAMAR*/
+#btn-llamar {
+    z-index: 50;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    
+}
+#btn-llamar img {
+    width: 50px;
+    height: 50px;
+}
+#btn-llamar:hover {
+    cursor: pointer;
+}
+
+/*CONTENEDOR PRINCIPAL DE LA TIENDA*/
+.caja1 {
+    width: 100%;
+    height: 1000px;
+    margin-top: 50px;
+    /* display: flex; */
+    /* background-color: bisque; */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.caja-border {
+    float: left;
+    /* display: inline-block; */
+    width: 25%;
+    height: 300px;
+    background-color: rgb(100, 100, 185);
+    /* border-style: solid;
+    border-width: 20px;
+    border-color: crimson; */
+    box-sizing: border-box;
+    margin: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.caja-border p {
+    margin-bottom: 10px;
+}
+.caja-border:hover {
+    background-color: rgb(100, 100, 185, 0.5);
+    cursor: pointer;
+    /* position: relative;
+    top: 50px;
+    width: 40%;
+    height: 400px;  */
+}
+#precio {
+    margin-top: 10px;
+    visibility: hidden;
+    font-weight: bold;
+    color: blue;
+}
+.caja-border:hover #precio {
+    /* display: none; */
+    visibility: visible;
+}
+/* .caja-border:hover h5 {
+    font-size: xx-large;
+}
+.caja-border:hover p {
+    font-size: x-large;
+} */
+
+.articulo {
+    width: 200px;
+    height: 150px;
+}
+.btn-art {
+    width: 80px;
+    height: 15px;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: rgba(100, 149, 237, 1);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.material-icons {
+    visibility: hidden;
+}
+.btn-art:hover .material-icons {
+    visibility: visible;
+}
+
+/*USADOS PARA LA PRACTICA DE MODELO DE CAJA*/
+#caja-border2 {
+    float: left;
+    width: 20%;
+    height: 150px;
+    background-color: rgb(100, 100, 185);
+    border-left-style: solid;
+    border-left-color: crimson;
+    border-left-width: 20px;
+    margin: 30px;
+}
+#caja-border3 {
+    float: left;
+    width: 20%;
+    height: 150px;
+    background-color: rgb(100, 100, 185);
+    border: 20px solid crimson;
+    margin: 30px;
+}
+
+/*USADO PARA LA PRACTICA DE POSITION*/
+#caja-relative {
+    position: relative;
+    top: 50px;
+    /* bottom: 50px; */
+    left: 150px;
+    /* right: 150px; */
+    background-color: rgb(35, 149, 60);
+    
+}
+
+/*PRACTICA DE SELECTORES AVANZADOS*/
+#select::before {
+    content: "Algo que va antes del parrafo ";
+}
+#select:active {
+    background-color: aqua;
+}
+#select::after {
+    content: " Algo puesto luego del parrafo"
+}
+#select::first-letter {
+    font-size: 1.5em;
+    color: red;
+}
+#select::first-line {
+    font-weight: bold;
+}
+#nombre:blank {
+   background-color: blue;
+}
+#lista li:nth-child(2n+1){
+    background-color: darkgray;
+}
+input:required {
+    border: 5px;
+    border-color: aqua;
+    border-style: double;
+}

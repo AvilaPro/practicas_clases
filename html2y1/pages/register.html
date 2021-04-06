@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <link rel="stylesheet" href="../css/estilos.css">
+                <link rel="stylesheet" href="../css/normalize.css">
+                <title>Registro</title>		
+            </head>
+
+<body>
+        <header>
+                <figure>
+                    <img src="../img/logo1.jpg" alt="">
+                </figure>
+                <nav>
+                    <ul id="ul-header">
+                        <a href="../index.html">
+                            <li class="li-header">Inicio</li>
+                        </a>
+                        <a href="https://www.espinof.com/listas/marvel-que-orden-conviene-ver-todas-peliculas-superheroes-mcu" target="_blank">
+                            <li class="li-header">Peliculas</li>
+                        </a>
+                        <a href="#series">
+                            <li class="li-header">Series</li>
+                        </a>
+                        <a href="./pages/curiosidad.html">
+                            <li class="li-header">Curiosidades</li>
+                        </a>
+                        <a href="./pages/table.html">
+                            <li class="li-header">Tabla</li>
+                        </a>
+                        <a href="./pages/register.html">
+                            <li class="li-header">Registrar</li>
+                        </a>
+                    </ul>
+                </nav>
+        </header>
+            <div id="encabezado">
+                <h1 id="titulo-principal">Resgistrate</h1>
+            </div>
+        <!-- FORMULARIO DE REGISTRO -->
+        <h2>Llena los campos de registro</h2>
+        <div style="display: flex;">
+            <form action="procesar.php" method="get">
+                <label for="">Nombre: </label>
+                <input type="text" name="nombre" id="" placeholder="tu nommbre aqui..." required maxlength="10"><br><br>
+                <label for="">Apellido: </label>
+                <input type="text" name="apellido" id="" placeholder="tu apellido aqui..." minlength="3" required><br><br>
+                <label for="">Contraseña: </label>
+                <input type="password" name="clave" id="" placeholder="deja tu clave aqui..." required><br><br>
+                <label for="">Correo: </label>
+                <input type="email" name="Correo" id="" placeholder="deja tu correo..." required><br><br>
+                <label for="">Habla acerca de ti: </label><br>
+                <textarea name="descripcion" id="" cols="30" rows="4" maxlength="100"></textarea><br><br>
+                <label for="">Selecciona tu heroe favorito: </label>
+                <select name="heroe" id="">
+                    <option value="1">Iron Man</option>
+                    <option value="2">Hulk</option>
+                    <option value="3">Thor</option>
+                    <option value="4">Capitan America</option>
+                    <option value="5">Spider Man</option>
+                    <option value="6">Capitana Marvel</option>
+                </select><br><br>
+                <label for="">Estado Civil</label><br>
+                <input type="radio" name="civil" value="1" id="">Soltero <br>
+                <input type="radio" name="civil" value="2" id="">Casado <br>
+                <input type="radio" name="civil" value="3" id="">Divorciado <br>
+                <input type="radio" name="civil" value="4" id="">Viudo <br><br>
+                <label for="">Peliculas preferidas: </label><br>
+                <input type="checkbox" name="iron" id="">Iron Man <br>
+                <input type="checkbox" name="hulk" id="">Hulk <br>
+                <input type="checkbox" name="thor" id="">Thor <br>
+                <input type="checkbox" name="marvel" id="">Capitana Marvel <br><br>
+                <input type="hidden" name="fecha" value="24/02/2021">
+
+                <input class="btn-form" type="submit" value="Registrar">
+                <input class="btn-form" type="reset" value="Borrar Campos">
+            </form>
+        </div>
+
+        <footer style="height: 200px;"></footer>
+</body>
+</html>

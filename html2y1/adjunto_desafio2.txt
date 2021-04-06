@@ -1,0 +1,39 @@
+Conociendo Ajax
+
+AJAX
+
+
+AJAX, acrónimo de Asynchronous JavaScript And XML (JavaScript asíncrono y XML), es una técnica de desarrollo web para crear aplicaciones interactivas o RIA (Rich Internet Applications). Estas aplicaciones se ejecutan en el cliente, es decir, en el navegador de los usuarios mientras se mantiene la comunicación asíncrona con el servidor en segundo plano. De esta forma es posible realizar cambios sobre las páginas sin necesidad de recargarlas, mejorando la interactividad, velocidad y usabilidad en las aplicaciones.
+
+Ajax es una tecnología asíncrona, en el sentido de que los datos adicionales se solicitan al servidor y se cargan en segundo plano sin interferir con la visualización ni el comportamiento de la página, aunque existe la posibilidad de configurar las peticiones como síncronas de tal forma que la interactividad de la página se detiene hasta la espera de la respuesta por parte del servidor.
+
+JavaScript es un lenguaje de programación (scripting language) en el que normalmente se efectúan las funciones de llamada de Ajax mientras que el acceso a los datos se realiza mediante XMLHttpRequest, objeto disponible en los navegadores actuales. En cualquier caso, no es necesario que el contenido asíncrono esté formateado en XML.
+
+Ajax es una técnica válida para múltiples plataformas y utilizable en muchos sistemas operativos y navegadores dado que está basado en estándares abiertos como JavaScript y Document Object Model (DOM).
+
+
+Antecedentes de Ajax
+
+
+A pesar de que el término «Ajax» fue creado en 2005 por Jesse James Garrett,1 la historia de las tecnologías que permiten Ajax se remonta a una década antes con la iniciativa de Microsoft en el desarrollo de Scripting Remoto. Sin embargo, las técnicas para la carga asíncrona de contenidos en una página existente sin requerir recarga completa remontan al tiempo del elemento iframe (introducido en Internet Explorer 3 en 1996) y el tipo de elemento layer (introducido en Netscape 4 en 1997, abandonado durante las primeras etapas de desarrollo de Mozilla). Ambos tipos de elemento tenían el atributo src que podía tomar cualquier dirección URL externa, y cargando una página que contenga JavaScript que manipule la página paterna, pueden lograrse efectos parecidos al Ajax.
+
+El Microsoft's Remote Scripting (o MSRS, introducido en 1998) resultó un sustituto más elegante para estas técnicas, con envío de datos a través de un applet Java el cual se puede comunicar con el cliente usando JavaScript. Esta técnica funcionó en ambos navegadores, Internet Explorer versión 4 y Netscape Navigator versión 4. Microsoft la utilizó en el Outlook Web Access provisto con la versión 2000 de Microsoft Exchange Server.
+
+La comunidad de desarrolladores web, primero colaborando por medio del grupo de noticias microsoft.public.scripting.remote y después usando blogs, desarrollaron una gama de técnicas de scripting remoto para conseguir los mismos resultados en diferentes navegadores. Los primeros ejemplos incluyen la biblioteca JSRS en el año 2000, la introducción a la técnica imagen/cookie2 en el mismo año y la técnica JavaScript bajo demanda (JavaScript on Demand)3 en 2002. En ese año, se realizó una modificación por parte de la comunidad de usuarios4 al Microsoft's Remote Scripting para reemplazar el applet Java por XMLHttpRequest.
+
+Frameworks de Scripting Remoto como el ARSCIF5 aparecieron en 2003 poco antes de que Microsoft introdujera Callbacks en ASP. NET.6
+
+Desde que XMLHttpRequest está implementado en la mayoría de los navegadores, raramente se usan técnicas alternativas. Sin embargo, todavía se utilizan donde se requiere una mayor compatibilidad, una reducida implementación, o acceso cruzado entre sitios web. Una alternativa, el Terminal SVG7 (basado en SVG), emplea una conexión persistente para el intercambio continuo entre el navegador y el servidor.
+
+
+Problemas e Inconvenientes
+
+
+Las páginas creadas dinámicamente mediante peticiones sucesivas AJAX, no son registradas de forma automática en el historial del navegador, así que haciendo clic en el botón de "volver" del navegador, el usuario no será devuelto a un estado anterior de la página, en cambio puede volver a la última página que visitó. Soluciones incluyen el uso de IFrames invisible para desencadenar cambios en el historial del navegador y el cambio de la porción de anclaje de la dirección (después de un #).
+
+Los motores de búsqueda no analizan JavaScript. La información en la página dinámica no se almacena en los registros del buscador. Exceptuando Google, que desde el 2011 sí indexa contenido Ajax y JavaScript. Matt Cutts (director del departamento contra el spam en web de Google) lo confirmó en Twitter: “Googlebot keeps getting smarter. Now has the ability to execute AJAX/JS to index some dynamic comments.”
+
+Hay problemas usando Ajax entre nombres de dominios, a esto se le conoce como Same Origin Policy o Política del Mismo Origen, lo cual es una medida de seguridad que puede ser solucionada con Cross-Origin Resource Sharing (CORS).
+Dependiendo de como se desarrolle el sitio web, puedes mejorar o empeorar la carga en el servidor. Ajax puede ayudar al servidor a evitar la fase de renderización de HTML, dejándole ese trabajo al cliente, pero también puede sobrecargar al servidor si se hace varias llamadas a Ajax.
+
+Es posible que páginas con Ajax no puedan funcionar en teléfonos móviles, PDA u otros aparatos. Ajax no es compatible con todos los software para invidentes u otras discapacidades.
