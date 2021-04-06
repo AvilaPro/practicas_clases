@@ -1,0 +1,80 @@
+SELECTORES AVANZADOS
+
+Selector		                                   Ejemplo		        Tutorial de aprendizaje de CSS
+-Selector de tipo	                               h1 {  }		        Los tipos de selectores
+-Selector universal	                              * {  }		        El selector universal
+-Selector de clase	                                .box {  }	        Los selectores de clase
+-Selector de ID		                              #unique { }	        Los selectores de ID
+-Selector de atributo	                            a[title] {  }	    Los selectores de atributo
+Pseudoclase		                                     p:first-child { }	Las pseudoclases
+Pseudoelemento		                                p::first-line { }	Los pseudoelementos
+-Operadores de combinación descendentes	            article p	        Operadores de combinación descendentes
+-Operador de combinación de elementos hijo	        article > p	        Operadores de combinación de elementos hijo
+-Operador de combinación de elementos hermanos adyacentes	h1 + p	    Hermanos adyacentes
+-Operador de combinación general de elementos hermanos	    h1 ~ p	    Hermanos generales
+
+PSEUDOCLASES
+
+Selector		Descripción
+:active			Selecciona un elemento cuando el usuario lo activa (por ejemplo, con un clic).
+:any-link		Selecciona los estados :link y :visited de un enlace.
+:blank			Selecciona un elemento <input> cuyo valor de entrada está vacío.
+:checked		Selecciona un botón de opción o casilla de verificación en el estado que determines.
+:current (en-US)	Selecciona el elemento que se muestra en ese momento, o un ancestro de ese elemento.
+:default		Selecciona uno o más elementos de interfaz de usuario cuyo valor es el predeterminado de entre un conjunto de elementos similares.
+:dir			Selecciona un elemento según su direccionalidad (valor del atributo dir de HTML o propiedad direction de CSS).
+:disabled		Selecciona elementos de la interfaz de usuario que están en estado inactivo.
+:empty			Selecciona un elemento que no tiene elementos hijo, excepto por algún espacio en blanco opcional.
+:enabled		Selecciona elementos de la interfaz de usuario que están en estado activo.
+:first			En Paged Media, selecciona la primera página.
+:first-child		Selecciona el primero entre elementos hermanos.
+:first-of-type		Selecciona el primero entre un tipo determinado de elementos hermanos.
+:focus			Selecciona el elemento que tiene el foco.
+:focus-visible		Selecciona el elemento que tiene el foco cuando el foco tiene que estar visible para el usuario.
+:focus-within		Selecciona el elemento que tiene el foco y el elemento con un descendiente que tiene el foco.
+:future (en-US)		Selecciona los elementos que van después del elemento en curso.
+:hover			Selecciona un elemento cuando el usuario interactúa con él.
+:indeterminate		Selecciona elementos de interfaz de usuario cuyo valor está en un estado no determinado, por lo general se trata de casillas de verificación.
+:in-range		Selecciona un elemento cuyo valor se encuentra dentro de un rango de valores determinado.
+:invalid		Selecciona un elemento, como por ejemplo un <input>, cuyo estado es no válido.
+:lang			Selecciona un elemento según el idioma (valor del atributo lang de HTML).
+:last-child		Selecciona el último elemento de entre sus elementos hermanos.
+:last-of-type		Selecciona el último de entre los elementos hermanos de un tipo determinado.
+:left			En Paged Media selecciona las páginas de la izquierda.
+:link			Selecciona los enlaces no visitados.
+:local-link (en-US)	Selecciona los enlaces que dirigen a páginas que se encuentran en la misma página web que el documento activo.
+:is()			Selecciona cualquiera de los selectores de la lista de selección que se pase como valor de este selector.
+:not			Selecciona elementos que otros selectores no han seleccionado antes y que se han pasado como valor de este selector.
+:nth-child		Selecciona elementos de entre una lista de elementos hermanos. Los elementos hermanos están relacionados por una fórmula del tipo an + b (por ejemplo, 2n + 1 seleccionaría los elementos 1, 3, 5, 7, etc., es decir, todos los impares).
+:nth-of-type		Selecciona elementos de entre una lista de elementos hermanos de un tipo determinado (por ejemplo, todos los elementos <p>). Los elementos hermanos están relacionados por una fórmula del tipo an + b (por ejemplo, 2n + 1 relacionaría en la secuencia ese tipo de elementos, los números 1, 3, 5, 7, etc., es decir, todos los impares).
+:nth-last-child		Selecciona elementos de entre una lista de elementos hermanos, contando hacia atrás desde el final. Los elementos hermanos están relacionados por una fórmula del tipo an+b (por ejemplo, 2n + 1 relacionaría en la secuencia el último de los elementos de este tipo con el que se encuentra dos por delante, y así sucesivamente. Todos los impares, contando desde el final).
+:nth-last-of-type	Selecciona los elementos de entre una lista de elementos hermanos que son de un tipo determinado (por ejemplo, elementos <p>), contando hacia atrás desde el final. Los elementos hermanos están relacionados por una fórmula del tipo an+b (por ejemplo, 2n + 1 relacionaría en la secuencia el último de los elementos de ese tipo con el que se encuentra dos por delante, y así sucesivamente. Todos los impares, contando desde el final).
+:only-child		Selecciona un elemento que no tiene elementos hermanos.
+:only-of-type		Selecciona un elemento que es el único de su tipo entre sus elementos hermanos.
+:optional		Selecciona los elementos de formulario que son innecesarios.
+:out-of-range		Selecciona un elemento cuyo valor está fuera de rango.
+:past (en-US)		Selecciona los elementos que se encuentran antes del elemento activo.
+:placeholder-shown	Selecciona el elemento de entrada que muestra texto de marcador de posición.
+:playing (en-US)	Selecciona un elemento que representa un audio, un vídeo o un recurso similar que se puede «reproducir» o «pausar», cuando el elemento está «en reproducción».
+:paused (en-US)		Selecciona un elemento que representa un audio, un vídeo o un recurso similar que se puede “«reproducir» o «pausar» cuando el elemento está «pausado».
+:read-only		Selecciona los elementos que el usuario no puede modificar.
+:read-write		Selecciona los elementos que el usuario puede modificar.
+:required		Selecciona los elementos de formulario que son necesarios.
+:right			En Paged Media selecciona las páginas de la derecha.
+:root			Selecciona un elemento que es la raíz del documento.
+:scope (en-US)		Selecciona cualquier elemento de ámbito.
+:valid			Selecciona un elemento como <input>, en un estado válido.
+:target			Selecciona el elemento al que apunta la URL activa (es decir, cuyo ID coincide con el identificador de fragmento de la URL activo).
+:visited		Selecciona los enlaces visitados.
+
+PSEUDOELEMENTOS
+
+Selector		Descripción
+::after			Selecciona el elemento al que se puede aplicar estilo que aparece a continuación del contenido del elemento que lo origina.
+::before		Selecciona el elemento al que se puede aplicar estilo que aparece antes del contenido del elemento que lo origina.
+::first-letter		Selecciona la primera letra del elemento.
+::first-line		Selecciona la primera línea del elemento de contenido.
+::grammar-error (en-US)	Selecciona una parte del documento que contiene un error de gramática indicado por el navegador.
+::selection		Selecciona la parte del documento que ha sido seleccionada.
+::spelling-error	Selecciona una parte del documento que contiene un error de ortografía indicado por el navegador
+
