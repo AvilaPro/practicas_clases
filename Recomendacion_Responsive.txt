@@ -1,0 +1,12 @@
+Para conseguir que nuestro sitio web se adapte a los diferentes anchos de pantalla, estos parámetros serán muy útiles:
+
++Lo primero, y lo más importante es dejar de usar píxeles y usar porcentajes a la hora de tomar medidas (por ejemplo: width: 60%).
++Que el ancho de la página sea 100% no significa que queramos que la pantalla este en una alta resolución, sino que, si queremos limitar el ancho/alto junto al máximo/mínimo del contenido, debemos usar los diferentes parámetros apropiados para ello (max-width o si quisiésemos establecer un alto máximo max-height; para establecer el mínimo sería min-width y min-height).
++Las posiciones absolutas o fijas no son recomendables usarlas para posicionar contenido (menos cuando hagan falta). Lo mejor es utilizar el atributo float (float:left/right), es una técnica muy usada.
++Hay que hacer que las imágenes y vídeos no sobresalgan de la estructura; si no, aparecerá un scroll lateral en los dispositivos móviles que descolocará totalmente el diseño.
+
+Imagenes Responsive Sugeridas:
+
+1) https://imgur.com/a/0gvmFCg
+2) https://imgur.com/a/DvrWyEU
+3) https://imgur.com/a/SKeYZw2
