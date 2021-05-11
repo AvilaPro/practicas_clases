@@ -103,3 +103,6 @@ tty
 Intended for media using a fixed-pitch character grid (such as teletypes, terminals, or portable devices with limited display capabilities). Authors should not use pixel units with the "tty" media type.
 tv
 Intended for television-type devices (low resolution, color, limited-scrollability screens, sound available).
+
+
+Para practicar flex: https://the-echoplex.net/flexyboxes/
