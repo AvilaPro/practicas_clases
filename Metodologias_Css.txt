@@ -1,0 +1,86 @@
++++OOCSS:
+SEPARAR LA ESTRUCTURA DEL DISEÑO
+Casi todos los elementos en una página web tienen diferentes características visuales (es decir, “pieles”) que se repiten en diferentes contextos. Por otro lado, otras características generalmente invisibles (“estructura”) se repiten del mismo modo.
+
+Cuando estas características diferentes se abstraen en módulos basados en clases, se convierten en reutilizables y se pueden aplicar a cualquier.
+
+SEPARAR CONTENEDOR DEL CONTENIDO
+
++++BEM:
+Bloques
+Entidad independiente que tiene significado por sí misma. (header, container, menu, checkbox, input…)
+
+Elementos
+Partes de un bloque que no tienen un significado independiente. Están semánticamente vinculados a su bloque. (elemento de un menú, elemento de una lista, titulo de un header, caption de un elemento picture, etc…)
+
+Modificadores
+Indicadores de bloque o elemento. Utilizados para cambiar la apariencia o comportamiento. (disabled, highlighted, checked, fixed, size big, color yellow…)
+
+Esta es el sistema de sintaxy de BEM
+
+.bloque
+.bloque--modificador
+.bloque__elemento
+.bloque__elemento--modificador
+
+Mas Info: http://getbem.com/
+
++++SMACSS:
+Scalable and Modular Architecture for CSS (SMACSS)
+Desarrollado en 2011 por Jonathan Snook, SMACSS funciona mediante organización de las reglas CSS en 5 categorías. (Base, Maquetación, Módulo, Estado y tema):
+
+BASE
+Reglas básicas para elementos, atributos, pseudo-clases, etc… Normalize.css sería un ejemplo de reglas base
+
+Ejemplos:
+
+h1 {
+ font-size: 32px;
+}
+div {
+  margin: 0 auto;
+}
+a {
+  color: blue;
+}
+MAQUETACIÓN
+Las reglas de estilo que están relacionados con el diseño estructural de la páginas. Contenedores, grillas, etc. Van con el prefijo layout- o l-
+
+Ejemplos:
+
+.layout-sidebar {
+  width: 320px;
+}
+.l-comments {
+  width: 640px;
+}
+MÓDULOS
+componentes re-usables y modulares
+
+Ejemplos:
+
+.call-to-action-button {
+  text-transform: uppercase;
+  color: #FFF200;
+}
+.search-form {
+  display: inline-block;
+  background-color: E1E1E1;
+}
+ESTADOS
+Las reglas de estilo que especifican el estado actual de algo en la interfaz.
+
+Ejemplos:
+
+.is-hidden {
+  display: none;
+}
+.is-highlighted {
+  color: #FF0000;
+  background-color: #F4F0BB;
+  border: 1px solid #CBBD15;
+}
+TEMAS
+Es lo que en OOCSS se le llama “skin” o piel. En SMACSS es opcional, los estilos visuales pueden estar integrados a los módulos y estados o separados por tema para sitios en donde el usuario pueda elegir un tema, para sitios multi-lenguaje, etc…
+
+SMACSS ofrece una nomenclatura más simple que BEM. No hay nombres para los estilos base ya que se usa los propios selectores (h1, p, a, etc.). A los módulos se les da un nombre de clase único. Los sub-componentes y las variaciones son prefijados con el nombre el módulo padre

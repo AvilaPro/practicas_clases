@@ -1,0 +1,72 @@
+DATOS IMPORTANTES PARA EL RESPONSIVE:
+
+Estrategia desde [Desktop a Mobile].
+
+Identificar Elementos que deseamos mostrar y como mostrar.
+
+Header, logo este centrado y el menu oculto.
+Banner, se ajuste a la pantalla.
+Section1, se ajusten para a vista en pequeñas pantallas.
+Aside1, Debajo de Section 1, ocultar a la Mujer Maravilla, dejar el globito azul.
+Section2, al final con el contenido de las historietas.
+
+Estructura General de la Media Query:
+@media not|only mediatype and (mediafeature and|or|not mediafeature) {
+  CSS-Code;
+}
+
+Todas las media Types:
+all
+Suitable for all devices.
+braille
+Intended for braille tactile feedback devices.
+embossed
+Intended for paged braille printers.
+handheld
+Intended for handheld devices (typically small screen, limited bandwidth).
+print
+Intended for paged material and for documents viewed on screen in print preview mode. Please consult the section on paged media for information about formatting issues that are specific to paged media.
+projection
+Intended for projected presentations, for example projectors. Please consult the section on paged media for information about formatting issues that are specific to paged media.
+screen
+Intended primarily for color computer screens.
+speech
+Intended for speech synthesizers. Note: CSS2 had a similar media type called 'aural' for this purpose. See the appendix on aural style sheets for details.
+tty
+Intended for media using a fixed-pitch character grid (such as teletypes, terminals, or portable devices with limited display capabilities). Authors should not use pixel units with the "tty" media type.
+tv
+Intended for television-type devices (low resolution, color, limited-scrollability screens, sound available).
+
+
+Podemos ingresar Media Queries en el <head> de la pagina html con la sentencia link.
+<link rel="stylesheet" media=[media querie] href="">
+
+Podemos ingresar Media Queries en la hoja de estilos CSS:
+Ingresando la estructura de la media querie.
+
+O tambien importando una hoja de estilo dentro de otra hoja de estilos CSS:
+@import url("direccion") media querie;
+
+NOTA: las importaciones deben ir antes de todo el contenido de la hoja de estilo.
+
+
+Notas para responsive con columnas:
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+
+
+
+
