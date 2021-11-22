@@ -1,0 +1,67 @@
+void loop()
+{
+  int respuesta;
+  do {
+    respuesta = menu();
+    switch (respuesta) {
+      case 1:
+        funcion1(led);i
+        break;
+      case 2:
+        funcion2(led);
+        break;
+      case 3:
+        funcion3();
+        break;
+      case 4:
+        Serial.println("Adios...");
+        while (true) {
+          //se queda aqui el programa
+        }
+        break;
+      default:
+        Serial.println("Opcion de menu incorrecta!!!!!");
+        break;
+    }
+    limpia_terminal();
+  } while ((respuesta < 1) || (respuesta > 4));
+}
+
+int menu() {
+  String leido = "";
+
+  Serial.println("Elige opcion a ejecutar:");
+  Serial.println("1 - Encender siguiente led");
+  Serial.println("2 - Led Encendido");
+  Serial.println("3 - Sonar Buzzer 5 seg.");
+  Serial.println("4 - Fin");
+
+  while (Serial.available() == 0) {
+    //Ho hago nada
+  }
+
+  do {
+
+  }  while (Serial.available() > 0);
+
+return num
+
+}
+void limpia_terminal() {    //Solo valido para usar con putty
+  Serial.write(27);       // ESC command
+  Serial.print("[2J");    // clear screen command
+  Serial.write(27);
+  Serial.print("[H");     // cursor to home command
+}
+
+void funcion1(int num) {
+
+}
+
+void funcion2(int num) {
+
+}
+
+void funcion3() {
+
+}
