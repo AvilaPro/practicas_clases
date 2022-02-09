@@ -1,4 +1,4 @@
-SELECTORES AVANZADOS
+﻿SELECTORES AVANZADOS
 
 Selector		                                   Ejemplo		        Tutorial de aprendizaje de CSS
 -Selector de tipo	                               h1 {  }		        Los tipos de selectores
@@ -6,6 +6,8 @@ Selector		                                   Ejemplo		        Tutorial de aprend
 -Selector de clase	                                .box {  }	        Los selectores de clase
 -Selector de ID		                              #unique { }	        Los selectores de ID
 -Selector de atributo	                            a[title] {  }	    Los selectores de atributo
+-Selector de atributo igual			    a[attr="valor"]         Selector de atributo igual
+-Selector de atributo contenido			    a[attr*="valor"]	    Selector de atriburo que contenga a valor
 Pseudoclase		                                     p:first-child { }	Las pseudoclases
 Pseudoelemento		                                p::first-line { }	Los pseudoelementos
 -Operadores de combinación descendentes	            article p	        Operadores de combinación descendentes
