@@ -118,6 +118,68 @@ Layout Shifter:
   }
 }
 
+
++++Website
+
+Layout Shifter Mejorado
+<div class="container">
+    <div class="box dark_blue"></div>
+    <div class="container" id="container2">
+        <div class="box light_blue"></div>
+        <div class="box green"></div>
+    </div>
+    <div class="box red"></div>
+</div>
+CSS
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100%;
+    height: 150px;
+}
+
+.dark_blue {
+    background-color: #131c58;
+}
+.light_blue {
+    background-color: #3760cb;
+}
+.green {
+    background-color: #12a400;
+}
+.red {
+    background-color: #a40000;
+}
+
+@media (min-width: 500px) {
+    .dark_blue {
+        width: 50%;
+        height: inherit;
+    }
+    #container2 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 600px) {
+    .dark_blue {
+        width: 25%;
+        order: 1;
+    }
+    #container2 {
+        width: 50%;
+    }
+    .red {
+        width: 25%;
+        order: -1;
+        height: inherit;
+    }
+} 
+
 +++WebSite:
 
 Tiny Tweaks:
