@@ -1,12 +1,12 @@
 DATOS IMPORTANTES PARA EL RESPONSIVE:
-
+ 
 Estrategia desde [Desktop a Mobile].
 
 Identificar Elementos que deseamos mostrar y como mostrar.
 
 Header, logo este centrado y el menu oculto.
 Banner, se ajuste a la pantalla.
-Section1, se ajusten para a vista en pequeñas pantallas.
+Section1, se ajusten para a vista en pequeï¿½as pantallas.
 Aside1, Debajo de Section 1, ocultar a la Mujer Maravilla, dejar el globito azul.
 Section2, al final con el contenido de las historietas.
 
